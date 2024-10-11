@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script type="module" src="backend.js"></script>
+  <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2012/04/14/12/40/letter-q-33754_1280.png">
+  <meta name="description" content="QuizLeapBooks provides free NCERT and ICSE textbook questions and quizzes for Class 6, 7, and 8. Explore various types of questions and quizzes to help you study and excel in your exams.">
+  <meta name="keywords" content="NCERT Quiz, ICSE Quiz, Class 6 Questions, Class 7 Questions, Class 8 Questions, Free Textbook Questions, Educational Quizzes">
+  <meta property="og:title" content="QuizLeapBooks | Free NCERT and ICSE Textbook Questions & Quizzes">
+  <meta property="og:description" content="QuizLeapBooks offers a variety of free questions and quizzes from NCERT and ICSE textbooks for Class 6, 7, and 8. Improve your understanding and ace your exams with our resources.">
+  <meta property="og:image" content="https://cdn.pixabay.com/photo/2012/04/14/12/40/letter-q-33754_1280.png">
+  <meta property="og:url" content="https://quizleapsbooks.github.io/Welcome_Quiz_Leap_Books/">
+  <meta name="twitter:title" content="QuizLeapBooks | Free NCERT and ICSE Textbook Questions & Quizzes">
+  <meta name="twitter:description" content="Explore free questions and quizzes from NCERT and ICSE textbooks for Class 6, 7, and 8 on QuizLeapBooks. Boost your exam preparation with our study resources.">
+  <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2012/04/14/12/40/letter-q-33754_1280.png">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <!-- Login Form -->
+  <div id="login-page" class="container">
+    <h2>Login</h2>
+    <form action="">
+      <div id="signInMessage" class="messageDiv" style="display: none;"></div>
+      <div class="input-box">
+        <input type="email" id="signIn-email" required>
+        <label>Email</label>
+      </div>
+      <div class="input-box">
+        <input type="password" id="signIn-password" required>
+        <label>Password</label>
+        <span class="eye" onclick="togglePassword('signIn-password', 'eye-icon2')">
+          <i id="eye-icon2" class="fa fa-eye"></i>
+        </span>
+        <p>Don't have an Account? <br><a href="index.html">Sign Up</a></p>
+      </div>
+      <button id="submitSignIn">Login</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="backend.js"></script>
+</body>
+</html>
