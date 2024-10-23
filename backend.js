@@ -15,7 +15,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth();
+const auth = getAuth(app); // Passed the app instance here
 const db = getFirestore(app);
 
 // Function to show messages
@@ -80,6 +80,7 @@ signInButton.addEventListener('click', (event) => {
       }, 2000);
     })
     .catch((error) => {
+      console.error(error.message); // For debugging
       showMessage('Login Failed. Email or Password is incorrect.', 'signInMessage');
     });
 });
